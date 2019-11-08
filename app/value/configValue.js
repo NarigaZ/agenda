@@ -1,3 +1,3 @@
 angular.module("listaTelefonica").value("config", {
-    baseUrl: "http://dzs.company"
+    baseUrl: "https://dzs-backend.herokuapp.com"
 });
