@@ -28,7 +28,6 @@
 
 		<table ng-show="contatos.length > 0" class="table table-striped">
 			<tr>
-				<th>Serial</th>
 				<th></th>
 				<th><a href="" ng-click="ordernarPor('nome')">Nome</a></th>
 				<th><a href="" ng-click="ordernarPor('telefone')">Telefone</a></th>
@@ -37,7 +36,6 @@
 			</tr>
 
 			<tr ng-class="{selecionado: contato.selecionado}" ng-repeat="contato in contatos | filter:{nome: busca} | orderBy: ordenacao:direcaoOrdenacao">
-                <td>{{contato.serial}}</td>
 				<td><input type="checkbox" ng-model="contato.selecionado"/></td>
 				<td>{{contato.nome | name | ellipsis}}</td>
 				<td>{{contato.telefone}}</td>
